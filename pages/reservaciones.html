@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepe Wings</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/pepewgs.jpg">
+</head>
+
+<body>
+    <!-- Estructura del ecabezado -->
+    <header>
+        <!-- Logo con link a inicio -->
+        <a href="../index.html" class="logo">
+            <img src="../img/logoPepeWings.png" alt="Pepe Wings" width="200px">
+        </a>
+        <!-- checkbox para menu hamburguesa -->
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+            <!-- icono de hamburguesa -->
+        </label>
+        <!-- Estructura del menú -->
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="reservaciones.html">Reservar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Portada -->
+        <section id="banner">
+            <div class="contenido-banner">
+                <h1><span>¡Aparta tu lugar!</span></h1>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="reservar">
+            <form>
+                <legend class="cita">Haz tu Reservación</legend>
+                <div class="campos">
+                        
+                        <div>
+                            <p>
+                                <label for="camponombre">Nombre:</label>
+                                <input type="text" name="nombre" id="camponombre" placeholder="Escribe tu nombre">
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" name="email" id="email">
+                            </p>
+                        </div>
+
+                        <p>
+                            <label for="fecha">Fecha de la reservación</label>
+                            <input type="datetime-local" name="fecha" id="fecha">
+                        </p>
+
+                        <div>
+                            <p>
+                                <label for="movil">Ingresa un número telefónico</label>
+                                <input type="tel" name="movil" id="movil" maxlength="10">
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <label for="personas">No. de Personas</label>
+                                <select name="Personas" id="Personas">
+                                    <option value="">2 personas</option>
+                                    <option value="">3 personas</option>
+                                    <option value="">4 personas</option>
+                                    <option value="">5 personas</option>
+                                    <option value="">6 personas</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <label for="celebracion">¿Celebrás algún eventeo</label>
+                                <select name="celebracion" id="celebracion">
+                                    <option>No</option>
+                                    <option>Cumleaños</option>
+                                    <option>Aniversario</option>
+                                    <option>Otro</option>
+                                </select>
+                            </p>
+                        </div>
+                </div>
+
+                <div class="mensaje">
+                    <p>
+                        <label for="adicional">Información adicional</label>
+                        <textarea id="adicional" name="adicional" rows="8" cols="80"></textarea>
+                    </p>
+                </div>
+                <input class="boton" type="submit" valor="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <nav>
+            <div>
+                <a href="../index.html" class="logo">
+                    <img src="../img/logoPepeWings.png" alt="Pepewings">
+                </a>
+            </div>
+        </nav>
+        <span>Pepe Wings © | Todos los derechos reservados</span>
+    </footer>
+</body>
+
+</html>
