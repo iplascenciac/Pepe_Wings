@@ -1,53 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepe Wings</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/pepewgs.jpg">
 </head>
+
 <body>
     <!-- Estructura del ecabezado -->
-    <header>
-        <!-- Logo con link a inicio -->
-        <a href="../index.html" class="logo">
-            <img src="../img/logoPepeWings.png" alt="Pepe Wings" width="200px">
+    <header class="container-fluid bg-dark d-flex justify-content-center p-2">
+        <a href="../index.html">
+            <img src="../img/logoPepeWings.png" width="150px" alt="">
         </a>
-        <!-- checkbox para menu hamburguesa -->
-        <input type="checkbox" id="check">
-        <label for="check" class="mostrar-menu">
-            &#8801 <!-- icono de hamburguesa -->
-        </label>
-        <!-- Estructura del menú -->
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="reservaciones.html">Reservar</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <label for="check" class="esconder-menu">
-                &#215
-            </label>
-        </nav>
     </header>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-warning fs-5 fw-bold"> Pepe Wings | Fast Food</span>
+            </a>
+            <button class="navbar-toggler btn-warning" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="menu.html">Menú</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="promociones.html">Promos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="galeria.html">Galería</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="reservaciones.html">Reservar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-warning btn-primary-outline-success" type="button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <main>
         <!-- Portada -->
-        <section id="banner">
-        <div class="contenido-banner">
-            <h1><span>¡Nuestras Redes Sociales!</span></h1>
+        <div class="container-fluid d-flex text-aling-center justify-content-center fs-8 bg-secondary p-2" id="banner ">
+            <div class="contenido-banner">
+                <h1><span>¡Nuestras Redes Sociales!</span></h1>
+            </div>
         </div>
-        </section>
 
         <!-- Galería PepeWings -->
-        <section class="wings galeria">
-            <a href="https://www.instagram.com/pepe_wings/" target="_blank">@pepe_wings</a>
+        <section class="container w-50">
+            <a class="fs-2 d-flex justify-content-center fw-bold text-warning" href="https://www.instagram.com/pepe_wings/">IG: @pepe_wings</a>
+            <div id="igppw" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#igppw" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#igppw" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#igppw" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="../img/ppw1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/ppw2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/ppw3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/ppw3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/ppw5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/ppw6.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#igppw"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#igppws"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Galería Los Chupecitos -->
+        <section class="container w-50">
+            <a class="fs-2 d-flex justify-content-center fw-bold text-warning" href="https://www.instagram.com/los_chupecitos/">IG: @los_chupecitos</a>
+            <div id="iglc" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#iglc" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#iglc" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#iglc" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="../img/lc1.png" class="d-block w-100 border" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/lc2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/lc3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/lc4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/lc5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/lc6.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#iglc"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#iglc"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            
+
+            <!-- <a href="https://www.instagram.com/pepe_wings/" target="_blank">@pepe_wings</a>
             <div class="alas">
                 <div class="pp1">
                     <img src="../img/ppw1.png">
@@ -67,37 +182,12 @@
                 <div class="pp6">
                     <img src="../img/ppw6.png">
                 </div>
-            </div>
-        </section>
-
-        <!-- Galería Los Chupecitos -->
-        <section class="chupes">
-            <a href="https://www.instagram.com/los_chupecitos/" target="_blank">@los_chupecitos</a>
-            <div class="tragos">
-                <div class="pp1">
-                    <img src="../img/lc1.png">
-                </div>
-                <div class="pp2">   
-                    <img src="../img/lc2.png">
-                </div>
-                <div class="pp3">
-                    <img src="../img/lc3.png">
-                </div>
-                <div class="pp4">
-                    <img src="../img/lc4.png">
-                </div>
-                <div class="pp5">   
-                    <img src="../img/lc5.png">
-                </div>
-                <div class="pp6">
-                    <img src="../img/lc6.png">
-                </div>
-            </div>
+            </div> -->
         </section>
     </main>
-    
+
     <!-- Pie de página -->
-    <footer>
+    <footer  class="bg-dark">
         <nav>
             <div>
                 <a href="../index.html" class="logo">
@@ -105,10 +195,13 @@
                 </a>
             </div>
         </nav>
-        <span>Pepe Wings © | Todos los derechos reservados</span>
+        <span class="fs-5">Pepe Wings © | Todos los derechos reservados</span>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>

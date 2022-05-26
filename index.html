@@ -1,125 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ivan Plascencia">
     <meta name="copyright" content="Ivan Plascencia">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/pepewgs.jpg">
     <title>Pepe Wings</title>
 </head>
+
 <body>
     <!-- Estructura del ecabezado -->
-    <header>
-        <!-- Logo con link a inicio -->
-        <a href="index.html" class="logo">
-            <img src="img/logoPepeWings.png" alt="Pepe Wings" width="200px">
+    <header class="container-fluid bg-dark d-flex justify-content-center p-2">
+        <a href="index.html">
+            <img src="img/logoPepeWings.png" width="150px" alt="">
         </a>
-        <!-- checkbox para menu hamburguesa -->
-        <input type="checkbox" id="check">
-        <label for="check" class="mostrar-menu">
-            &#8801 <!-- icono de hamburguesa -->
-        </label>
-        <!-- Estructura del menú -->
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/menu.html">Menú</a></li>
-                <li><a href="pages/promociones.html">Promociones</a></li>
-                <li><a href="pages/galeria.html">Galería</a></li>
-                <li><a href="pages/reservaciones.html">Reservar</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-            <label for="check" class="esconder-menu">
-                &#215
-            </label>
-        </nav>
     </header>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-warning fs-5 fw-bold"> Pepe Wings | Fast Food</span>
+            </a>
+            <button class="navbar-toggler btn-warning" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/menu.html">Menú</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/promociones.html">Promos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/galeria.html">Galería</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/reservaciones.html">Reservar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-warning btn-primary-outline-success" type="button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <!-- Portada -->
-    <section id="banner">
+    <div class="container-fluid d-flex text-aling-center justify-content-center fs-8 bg-secondary p-2" id="banner ">
         <div class="contenido-banner">
             <h1><span>¡Bienvenido!</span></h1>
         </div>
-    </section>
+    </div>
 
     <!-- ¿Quiénes somos? -->
-    <section class="about">
-        <article>
-            <h2>¿Quiénes somos?</h2>
+    <section class="mx-auto" id="intro">
+        <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">¿Quiénes somos?</h2>
 
-            <p class="qs">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum doloribus nobis illo eum fuga nam laborum. Modi minus nam nobis totam aliquam est quia iusto ex soluta natus, ea enim inventore voluptatibus dolorum adipisci perspiciatis ipsam earum unde. Repellendus sunt voluptatum doloribus. Impedit saepe architecto nostrum, est quam in natus.
-            </p>
+        <p class="p-3 fs-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum doloribus nobis illo eum fuga nam
+            laborum. Modi minus nam nobis totam aliquam est quia iusto ex soluta natus, ea enim inventore
+            voluptatibus dolorum adipisci perspiciatis ipsam earum unde. Repellendus sunt voluptatum doloribus.
+            Impedit saepe architecto nostrum, est quam in natus.
+        </p>
 
-            <p class="qs">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore, animi dolorem veritatis libero dolor in nostrum. Tenetur cumque repudiandae reiciendis. Totam consequuntur porro voluptate repellendus eius, asperiores mollitia tempore.
-            </p>
-        </article>
-
-        <!-- Recursos de la sección ¿quiénes somos?: mapa de ubicación, enlace al IG: los chupecitos y video de la reseta de las best sellers -->
-        <div class="recursos">
-            <div class="mapa">
-                <h3>Visítanos</h3>
-
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3778881078974!2d-99.64486278537457!3d19.265926186979282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd890d27d81b09%3A0xee32379a76b02955!2sPepe%20Wings!5e0!3m2!1ses!2smx!4v1651537773833!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="p-3 fs-5 border-bottom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore, animi dolorem veritatis
+            libero dolor in nostrum. Tenetur cumque repudiandae reiciendis. Totam consequuntur porro voluptate
+            repellendus eius, asperiores mollitia tempore.
+        </p>
+    </section>
+    <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">Más Información</h2>
+    <!-- Seccion recursos con bootstrap -->
+    <section class="container-fluid d-flex justify-content-center">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div>
+                    <h3 class="text-secondary fw-bold d-flex">Visítanos</h3>
+                </div>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3778881078974!2d-99.64486278537457!3d19.265926186979282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd890d27d81b09%3A0xee32379a76b02955!2sPepe%20Wings!5e0!3m2!1ses!2smx!4v1651537773833!5m2!1ses!2smx"
+                    width="300px" height="300px" style="border:2;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <div class="alianza">
-                <h3>Alianzas</h3>
-
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div>
+                    <h3 class="text-secondary fw-bold d-flex">Alianza</h3>
+                </div>
                 <a href="https://www.instagram.com/los_chupecitos/" target="_blank" alt="los chupecitos">
-                    <img class="alianza" src="img/chupecitos.jpg" alt="Los Chupecitos">
+                    <img class="alianza" src="img/chupecitos.jpg" alt="Los Chupecitos" width="300px" height="300px">
                 </a>
             </div>
-            <div class="video">
-                <h3>Best Seller</h3>
-
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6rhTnOA72lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div>
+                    <h3 class="text-secondary fw-bold d-flex">Best Sellers</h3>
+                </div>
+                <iframe class="video" width="300px" src="https://www.youtube.com/embed/6rhTnOA72lo"
+                    title="YouTube video player" frameborder="2"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </section>
 
+    <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">Nuestros Clientes</h2>
     <!-- Estructura de la sección Clientes -->
     <section class="clientes">
-        <article>
-            <h2>Nuestros clientes</h2>
-        </article>
-
-        <div class="personas">
-            <div class="diego">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1mH4kWQ8bMy2SgJi1UblVZcq9pAFUMTkQQ&usqp=CAU" alt="Cliente">    
-                <h3>Diego García</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi, nulla pariatur expedita id impedit unde et ea esse. At, aliquid repudiandae! Est, consequuntur minima molestiae quasi sed impedit magni!</p>
+        <div class="row w-75 mx-auto my-5 cliente-fila">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1mH4kWQ8bMy2SgJi1UblVZcq9pAFUMTkQQ&usqp=CAU" alt="Diego" width="180" height="160">
+                <div>
+                    <h3 class="text-secondary fw-bold fs-5 mt-4 px-4 pb-1">Diego García</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempore delectus qui nemo facere aliquam tenetur vel. Quos, ipsa quibusdam!</p>
+                </div>
             </div>
-            <div class="marcela">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswxrTPx91RLgxRm46DVPc5M3qSn67yOpuDA&usqp=CAU" alt="Cliente">
-                <h3>Marcela Lozoya</h3>
-                <p>LLorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi, nulla pariatur expedita id impedit unde et ea esse. At, aliquid repudiandae! Est, consequuntur minima molestiae quasi sed impedit magni!</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="center"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswxrTPx91RLgxRm46DVPc5M3qSn67yOpuDA&usqp=CAU"
+                        alt="Cliente">
+                <div>
+                    <h3 class="text-secondary fw-bold fs-5 mt-4 px-4 pb-1">Marcela Lozoya</h3>
+                    <p class="px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempore delectus qui nemo facere aliquam tenetur vel. Quos, ipsa quibusdam!</p>
+                </div>
             </div>
-            <div class="vicente">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzK1ClqjQ5NY8Cz9oBtLg0Ervxbve8tk6Ig&usqp=CAU" alt="Cliente">
-                <h3>Vicente Romero</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi, nulla pariatur expedita id impedit unde et ea esse. At, aliquid repudiandae! Est, consequuntur minima molestiae quasi sed impedit magni!x</p>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="center"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzK1ClqjQ5NY8Cz9oBtLg0Ervxbve8tk6Ig&usqp=CAU"
+                        alt="Cliente">
+                <div>
+                    <h3 class="text-secondary fw-bold fs-5 mt-4 px-4 pb-1">Vicente Romero</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempore delectus qui nemo facere aliquam tenetur vel. Quos, ipsa quibusdam!</p>
+                </div>
             </div>
         </div>
+
     </section>
-    
+
     <!-- Pie de página -->
-    <footer>
+    <footer  class="bg-dark">
         <nav>
             <div>
-                <a href="../index.html" class="logo">
+                <a href="index.html" class="logo">
                     <img src="img/logoPepeWings.png" alt="Pepewings">
                 </a>
             </div>
         </nav>
-        <span>Pepe Wings © | Todos los derechos reservados</span>
-    </footer> 
+        <span class="fs-5">Pepe Wings © | Todos los derechos reservados</span>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>

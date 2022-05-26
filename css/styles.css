@@ -10,12 +10,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Roboto:wght@100;300;500&display=swap');
 
 body{
-    background-color: blanchedalmond;
+    background-color: rgb(243, 242, 234);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color:orange;
+}
+
+#menu button{
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+}
+
+/* --------------- MediaQueries - Pantalla pequeña --------------- */
+@media (max-width: 768px) {
+    #intro {
+        width: 100% !important;
+    }
+
+    .cliente-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .recursos{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.carousel-item img{
+    width: 1400px;
+    height: 700px;
+    justify-content: center;
+
+}
+
+#titulo-reservaciones img{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+#titulo-contacto img {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
 }
 
 /* --------------- HEADER --------------- */
 header{
-    height: 100px;
     background-color: black;
     padding: 0 50px;
     color: white;
@@ -51,12 +102,13 @@ ul {
 
 .mostrar-menu{
     order: 1;
+    flex-wrap:nowrap ;
 }
 
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover{
-    color: rgb(255, 255, 255);
+    color: orange;
 }
 
 #check{
@@ -98,6 +150,14 @@ ul {
     text-align: justify;
     padding-top: 10px;
     font-size: 1.5em;
+}
+
+.carousel-inner{
+    width:100%;
+    margin: auto;
+    padding:auto;
+    display: flex;
+    justify-content:space-between;
 }
 
 /* formato al mapa dentro del grid */
@@ -343,6 +403,13 @@ ul {
     gap: 20px;
 }
 
+.center {
+    display: block;
+    margin: 0px auto;
+}
+
+
+
 /* --------------- FOOTER --------------- */
 footer{
     background-color: rgb(65, 65, 65);
@@ -429,7 +496,7 @@ footer{
     margin-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: block;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -785,7 +852,7 @@ form textarea:focus{
         background-color: black;
         right: -100%;
         top:0;
-        text-align: center;
+        text-align: start;
         padding: 100px 0;
         z-index: 100;
         transition: .8s;
@@ -806,9 +873,6 @@ form textarea:focus{
         right: 0;
     }
 }
-
-/*--------------- Animaciones ---------------*/
-
 
 /*--------------- Media Queries ---------------*/
 
@@ -960,4 +1024,4 @@ form textarea:focus{
         display: flex;
         align-items: center;
     }
-}
+} 
