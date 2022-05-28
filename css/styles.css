@@ -408,6 +408,10 @@ ul {
     margin: 0px auto;
 }
 
+.card {
+    background-color: rgb(63, 63, 63);
+}
+
 
 
 /* --------------- FOOTER --------------- */
@@ -421,6 +425,12 @@ footer{
 }
 
 /* --------------- MENÚ --------------- */
+.menu_digital{
+    margin: 10px;
+    padding: 10px;
+    
+}
+
 .digital{
     padding: 0 50px;
     margin-top: 20px;
@@ -444,7 +454,7 @@ footer{
 }
 
 .alimentos img{
-    background-color: orange;
+    background-color: rgb(255, 204, 0);
     border-radius: 50px;
     border: solid 5px black;
     display: flex;
@@ -461,18 +471,18 @@ footer{
         
     }
     25%{
-        background-color: rgb(126, 47, 1);
+        background-color: rgb(66, 53, 0);
         transform: rotatex(25%);
     }
     50%{
-        background-color: rgb(197, 100, 3);
+        background-color: rgb(127, 101, 0);
         transform: rotatex(50%);
     }
     75%{
-        background-color: rgb(201, 131, 0);
+        background-color: rgb(191, 153, 2);
     }
     100%{
-        background-color: orange;
+        background-color: rgb(255, 204, 0);
     }
 }
 
@@ -481,7 +491,7 @@ footer{
 }
 
 .bebidas img{
-    background-color: orange;
+    background-color: rgb(255, 204, 0);
     border-radius: 50px;
     border: solid 5px black;
     display: flex;
@@ -837,6 +847,12 @@ form textarea:focus{
     border: solid 2px rgb(255, 115, 0);
 }
 
+@media (max-width: 500px){
+    .carousel-inner img{
+        max-width: 300px;
+    }
+}
+
 /* --------------- RESPONSIVE --------------- */
 @media (max-width:800px){
     /*header*/
@@ -944,6 +960,9 @@ form textarea:focus{
 
     .contenido-banner h1{
         font-size: 2em;
+    }
+    .prom img{
+        width: 100px;
     }
 }
 

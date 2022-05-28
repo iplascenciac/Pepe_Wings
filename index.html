@@ -11,7 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/pepewgs.jpg">
-    <title>Pepe Wings</title>
+    <title>Pepe Wings | Fast Food</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" id="menu">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <span class="text-warning fs-5 fw-bold"> Pepe Wings | Fast Food</span>
             </a>
             <button class="navbar-toggler btn-warning" type="button" data-bs-toggle="collapse"
@@ -91,74 +91,83 @@
     </section>
     <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">Más Información</h2>
     <!-- Seccion recursos con bootstrap -->
-    <section class="container-fluid d-flex justify-content-center">
+    <section class="container-fluid d-flex justify-content-center w-75">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div>
-                    <h3 class="text-secondary fw-bold d-flex">Visítanos</h3>
-                </div>
-                <iframe class="mapa"
+            <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
+                <figure class="figure p-2 m-1">
+                    <figcaption class="figure-caption text-center fs-4 fw-bold">Visítanos</figcaption>
+                    <iframe class="mapa d-flex justify-content-center"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3778881078974!2d-99.64486278537457!3d19.265926186979282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd890d27d81b09%3A0xee32379a76b02955!2sPepe%20Wings!5e0!3m2!1ses!2smx!4v1651537773833!5m2!1ses!2smx"
                     width="300px" height="300px" style="border:2;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                    </iframe>
+                </figure>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div>
-                    <h3 class="text-secondary fw-bold d-flex">Alianza</h3>
-                </div>
-                <a href="https://www.instagram.com/los_chupecitos/" target="_blank" alt="los chupecitos">
-                    <img class="alianza" src="img/chupecitos.jpg" alt="Los Chupecitos" width="300px" height="300px">
-                </a>
+            <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
+                <figure class="figure p-2 m-1">
+                    <figcaption class="figure-caption text-center fs-4 fw-bold">Alianza</figcaption>
+                    <a href="https://www.instagram.com/los_chupecitos/" target="_blank" alt="los chupecitos">
+                        <img class="alianza" src="img/iglc.jpg" alt="Los Chupecitos" width="300px" height="300px">
+                    </a>
+                </figure>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div>
-                    <h3 class="text-secondary fw-bold d-flex">Best Sellers</h3>
-                </div>
-                <iframe class="video" width="300px" src="https://www.youtube.com/embed/6rhTnOA72lo"
-                    title="YouTube video player" frameborder="2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div class="col-lg-4 col-md-12 col-sm-12 justify-content-center">
+                <figure class="figure p-2 m-1">
+                    <figcaption class="figure-caption text-center fs-4 fw-bold">Best Sellers</figcaption>
+                    <iframe class="video" width="300px" src="https://www.youtube.com/embed/6rhTnOA72lo"
+                        title="YouTube video player" frameborder="2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </figure>
             </div>
         </div>
     </section>
 
     <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">Nuestros Clientes</h2>
     <!-- Estructura de la sección Clientes -->
-    <section class="clientes">
-        <div class="row w-75 mx-auto my-5 cliente-fila">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1mH4kWQ8bMy2SgJi1UblVZcq9pAFUMTkQQ&usqp=CAU" alt="Diego" width="180" height="160">
-                <div>
-                    <h3 class="text-secondary fw-bold fs-5 mt-4 px-4 pb-1">Diego García</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempore delectus qui nemo facere aliquam tenetur vel. Quos, ipsa quibusdam!</p>
+    <section class="opiniones d-block justify-content-center pb-5 m-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card bg-dark">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoHQ5Izz9RJClbQUkduj39Qr0OmlWcA5k6yQ&usqp=CAU"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center text-warning fw-bold">Fabián Peralta</h5>
+                        <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Possimus fuga repellendus quidem consectetur alias explicabo corporis illum id sit labore..
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img class="center"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswxrTPx91RLgxRm46DVPc5M3qSn67yOpuDA&usqp=CAU"
-                        alt="Cliente">
-                <div>
-                    <h3 class="text-secondary fw-bold fs-5 mt-4 px-4 pb-1">Marcela Lozoya</h3>
-                    <p class="px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempore delectus qui nemo facere aliquam tenetur vel. Quos, ipsa quibusdam!</p>
+            <div class="col">
+                <div class="card bg-dark">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qk3DLPNvX8w9_RNxjnhiATJXsg0Je6dmFA&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning fw-bold d-flex justify-content-center">Vanessa Mejía</h5>
+                        <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt facilis fugit eaque consectetur qui ducimus laboriosam ea dolore sed modi?</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <img class="center"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzK1ClqjQ5NY8Cz9oBtLg0Ervxbve8tk6Ig&usqp=CAU"
-                        alt="Cliente">
-                <div>
-                    <h3 class="text-secondary fw-bold fs-5 mt-4 px-4 pb-1">Vicente Romero</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempore delectus qui nemo facere aliquam tenetur vel. Quos, ipsa quibusdam!</p>
+            <div class="col">
+                <div class="card bg-dark">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxI5Ym0M4ZX534UnUjjnVi7bDlrFemOCdNMA&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning fw-bold d-flex justify-content-center">Alan Jiménez</h5>
+                        <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis aut distinctio eveniet nihil ducimus neque itaque. Sunt similique eum aperiam.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Pie de página -->
-    <footer  class="bg-dark">
+    <footer class="bg-dark">
         <nav>
             <div>
                 <a href="index.html" class="logo">
