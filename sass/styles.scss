@@ -1,0 +1,145 @@
+/* import */
+@import "carrusel";
+
+/* Resetar valores de margin y padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formato a la portada */
+h1 span{
+    color: white;
+    font-size: 1.5em;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media(max-width:568px){
+    h1 span{
+        font-size: 1em;
+    }
+}
+
+/* Formato a la sección más información */
+.recursos {
+    .mapa{
+        height: 50vh;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .alianza{
+        height: 50vh;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .video {
+        height: 50vh;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+}
+
+/* Página Menú */
+.digital{
+    padding: 0 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    h2{
+        color: rgb(255, 115, 0);
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    }
+
+    img{
+        background-color: rgb(255, 204, 0);
+        border-radius: 50px;
+        border: solid 5px black;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        animation-name: fondo;
+        animation-duration: .6s;
+        animation-iteration-count: 3;
+    }
+
+    @keyframes fondo{
+        0%{
+            background-color: black;
+            
+        }
+        25%{
+            background-color: rgb(66, 53, 0);
+            transform: rotatex(25%);
+        }
+        50%{
+            background-color: rgb(127, 101, 0);
+            transform: rotatex(50%);
+        }
+        75%{
+            background-color: rgb(191, 153, 2);
+        }
+        100%{
+            background-color: rgb(255, 204, 0);
+        }
+    }
+}
+
+@media(max-width:568px){
+    .digital{
+        flex-wrap: wrap;
+    }
+
+    .digital div{
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+/* fomularios */
+#titulo-reservaciones{
+    img{
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+    };
+}
+
+#titulo-contacto{
+    img{
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+    };
+}
+
+/* FOOTER */
+footer{
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+
+    div img{
+        width: 150px;
+    }
+
+    span{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+}
+
