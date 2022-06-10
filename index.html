@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ivan Plascencia">
     <meta name="copyright" content="Ivan Plascencia">
+    <meta name="description" content="Sitio web oficial de Grupo Pepe Wings">
+    <meta name="keywords" content="Fast Food, Alitas, Toluca, Metepec, Wings, coctelería, Pepe Wings, Los Chupecitos, Boneless, Delivery, Servicio a domicilio, micheladas, mojitos, Las alitas, Wings army, Wing stop, hamburguesas, hotdogs, menu digital, promociones, instagram, @pepe_wings, @los_chupecitos">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,11 +18,15 @@
 
 <body>
     <!-- Estructura del ecabezado -->
-    <header class="container-fluid bg-dark d-flex justify-content-center p-2">
-        <a href="index.html">
-            <img src="img/logoPepeWings.png" width="150px" alt="">
-        </a>
+    <header class="encabezado">
+        <div>
+            <a href="index.html">
+                <img src="img/logoPepeWings.png" width="100px" alt="Logo Pepe Wings">
+            </a>
+        </div>
     </header>
+
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" id="menu">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -66,31 +72,31 @@
     </nav>
 
     <!-- Portada -->
-    <div class="container-fluid d-flex text-aling-center justify-content-center fs-8 bg-secondary p-2" id="banner ">
-        <div class="contenido-banner">
-            <h1><span>¡Bienvenido!</span></h1>
+    <div class="banner">
+        <div class="banner_home">
+            <h1>¡Bienvenido!</h1>
         </div>
     </div>
 
     <!-- ¿Quiénes somos? -->
-    <section class="mx-auto" id="intro">
-        <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">¿Quiénes somos?</h2>
+    <section class="who">
+        <h2 class="who_title">¿Quiénes somos?</h2>
 
-        <p class="p-3 fs-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum doloribus nobis illo eum fuga nam
-            laborum. Modi minus nam nobis totam aliquam est quia iusto ex soluta natus, ea enim inventore
-            voluptatibus dolorum adipisci perspiciatis ipsam earum unde. Repellendus sunt voluptatum doloribus.
-            Impedit saepe architecto nostrum, est quam in natus.
+        <p>
+            Empresa del sector restaurantero 100% mexicana ubicada en Toluca Estado de México, a pocos kilometros de la zona comercial de Metepec, cuyas principales líneas de negocio son la venta para consumo de productos del tipo Fast Food y Coctelería. Adicionalmente ofrecemos el servicio de alitas y/o coctelería para tus eventos.
         </p>
 
-        <p class="p-3 fs-5 border-bottom">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore, animi dolorem veritatis
-            libero dolor in nostrum. Tenetur cumque repudiandae reiciendis. Totam consequuntur porro voluptate
-            repellendus eius, asperiores mollitia tempore.
+        <p>
+            Para nosotros, nuestros clientes son lo mas importante, es por ello que nuestras instalaciones cumplen con las medidas sanitarias correspondientes para asegurar un ambiente seguro en el que puedan disfrutar de la mejor experiencia posible.
+        </p>
+
+        <p>
+            No dudes mas y ven a vivir la experiencia Pepe wings con tus familiares y/o amigos. Haz tu reservación dando clic <a class="link_who" href="pages/reservaciones.html">aquí.</a>
         </p>
     </section>
-    <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">Más Información</h2>
+    
     <!-- Seccion recursos con bootstrap -->
+    <h2 class="more_info">Más Información</h2>
     <section class="recursos container-fluid d-flex justify-content-center w-75">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
@@ -124,14 +130,14 @@
         </div>
     </section>
 
-    <h2 class="text-warning fs-2 fw-bold m-3 p-3 border-top">Nuestros Clientes</h2>
+    <h2 class="customers">Nuestros Clientes</h2>
     <!-- Estructura de la sección Clientes -->
     <section class="opiniones d-block justify-content-center pb-5 m-5">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card bg-dark">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoHQ5Izz9RJClbQUkduj39Qr0OmlWcA5k6yQ&usqp=CAU"
-                        class="card-img-top" alt="">
+                        class="card-img-top" alt="Cliente">
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center text-warning fw-bold">Fabián Peralta</h5>
                         <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -143,7 +149,7 @@
             <div class="col">
                 <div class="card bg-dark">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qk3DLPNvX8w9_RNxjnhiATJXsg0Je6dmFA&usqp=CAU"
-                        class="card-img-top" alt="...">
+                        class="card-img-top" alt="Cliente">
                     <div class="card-body">
                         <h5 class="card-title text-warning fw-bold d-flex justify-content-center">Vanessa Mejía</h5>
                         <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -154,7 +160,7 @@
             <div class="col">
                 <div class="card bg-dark">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxI5Ym0M4ZX534UnUjjnVi7bDlrFemOCdNMA&usqp=CAU"
-                        class="card-img-top" alt="...">
+                        class="card-img-top" alt="Cliente">
                     <div class="card-body">
                         <h5 class="card-title text-warning fw-bold d-flex justify-content-center">Alan Jiménez</h5>
                         <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -167,15 +173,15 @@
     </section>
 
     <!-- Pie de página -->
-    <footer class="bg-dark">
+    <footer>
         <nav>
             <div>
                 <a href="index.html" class="logo">
                     <img src="img/logoPepeWings.png" alt="Pepewings">
                 </a>
             </div>
-        </nav>
-        <span class="fs-5">Pepe Wings © | Todos los derechos reservados</span>
+        </nav>  
+        <span class="marca">Pepe Wings © | Todos los derechos reservados</span>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

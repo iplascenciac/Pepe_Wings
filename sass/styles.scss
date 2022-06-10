@@ -1,5 +1,9 @@
-/* import */
+/* Imports */
 @import "carrusel";
+@import "colores";
+@import "breakpoints";
+@import "variables";
+@import "mixins";
 
 /* Resetar valores de margin y padding */
 * {
@@ -8,26 +12,112 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Formato a la portada */
-h1 span{
-    color: white;
-    font-size: 1.5em;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-@media(max-width:568px){
-    h1 span{
-        font-size: 1em;
+/* Formato al header */
+.encabezado{
+    background-color: black;
+    div{
+        @include flexible;
+        
+        a{
+            img{
+                width: map-get($estilo_encabezado , ancho);
+                padding: map-get($estilo_encabezado , 1rem);
+            }
+        }
     }
 }
 
-/* Formato a la sección más información */
+/* NAVBAR */
+.navbar{
+    background-color: $dark !important;
+}
+
+/* Formato a la portada */
+.banner{
+    .banner_home{
+        background-image: radial-gradient($color-primario, $dark);
+
+        h1{
+            @include flexible;
+            color: $ligth;
+            font-size: $h1;
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+        
+
+            @media(max-width:$lg){
+                font-size: 2em;
+            }
+        }
+    }
+
+    .banner_menu{
+        @extend .banner_home;
+        background: radial-gradient(circle, rgba(250,92,92,1) 0%, rgba(220,137,222,1) 100%);
+    }
+
+    .banner_promos{
+        @extend .banner_home;
+        background: linear-gradient(324deg, rgba(255,242,75,1) 0%, rgba(255,130,0,1) 100%);
+    }
+
+    .banner_galery{
+        @extend .banner_home;
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+
+    .banner_reservation{
+        @extend .banner_home;
+        background: linear-gradient(324deg, rgba(204,204,204,1) 0%, rgba(203,163,122,1) 100%);
+    }
+
+    .banner_contact{
+        @extend .banner_home;
+        background: radial-gradient(circle, rgba(255,222,117,1) 0%, rgba(190,190,196,1) 35%, rgba(138,235,255,1) 100%);
+    }
+}
+
+/* Formato a la sección ¿Quiénes Somos? */
+.who{
+    margin: 30px;
+    padding: 10px;
+    border-bottom:solid $color-secundario 1px;
+
+    h2{
+        font-size: $h2;
+        font-weight: bold;
+        color: $color-primario;
+    }
+    
+    p{
+        font-size: $p;
+        color:$color-texto;
+        
+
+        a{
+            text-decoration: none;
+            color: $color-texto;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: $color-primario
+        }
+    }
+}
+
+
+/* Formato a la sección Más Información */
+.more_info{
+    font-size: $h2;
+    font-weight: bold;
+    color: $color-primario;
+    margin: 30px;
+    padding: 10px;
+}
+
 .recursos {
     .mapa{
         height: 50vh;
@@ -48,6 +138,16 @@ h1 span{
     }
 }
 
+/* Formato a la sección Nuestros Clientes*/
+.customers{
+    font-size: $h2;
+    font-weight: bold;
+    color: $color-primario;
+    margin: 30px;
+    padding: 10px;
+    border-top:solid $color-secundario 1px;
+}
+
 /* Página Menú */
 .digital{
     padding: 0 50px;
@@ -58,9 +158,9 @@ h1 span{
 
     h2{
         color: rgb(255, 115, 0);
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     img{
@@ -97,7 +197,7 @@ h1 span{
     }
 }
 
-@media(max-width:568px){
+@media(max-width:$sm){
     .digital{
         flex-wrap: wrap;
     }
@@ -127,7 +227,8 @@ h1 span{
 
 /* FOOTER */
 footer{
-    color: white;
+    color: $ligth;
+    background-color: $dark !important;
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -136,10 +237,25 @@ footer{
     div img{
         width: 150px;
     }
-
+    
     span{
         margin-bottom: 30px;
         padding-bottom: 30px;
     }
 }
 
+@each $red in facebook,instagram,whatsapp{
+
+    .#{$red}-icon{
+        background-image:url('/img/#{$red}.png');
+    }
+}
+
+$rrss:(facebook:#0d6efd,instagram:#942cf6,whatsapp:#2ac741);
+
+@each $red, 
+$color in $rrss{
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
