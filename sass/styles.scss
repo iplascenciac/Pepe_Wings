@@ -35,7 +35,7 @@
 /* Formato a la portada */
 .banner{
     .banner_home{
-        background-image: radial-gradient($color-primario, $dark);
+        background: linear-gradient($dark,$color-primario);
 
         h1{
             @include flexible;
@@ -44,8 +44,6 @@
             font-weight: bold;
             padding-top: 20px;
             padding-bottom: 20px;
-            
-        
 
             @media(max-width:$lg){
                 font-size: 2em;
@@ -55,27 +53,22 @@
 
     .banner_menu{
         @extend .banner_home;
-        background: radial-gradient(circle, rgba(250,92,92,1) 0%, rgba(220,137,222,1) 100%);
     }
 
     .banner_promos{
         @extend .banner_home;
-        background: linear-gradient(324deg, rgba(255,242,75,1) 0%, rgba(255,130,0,1) 100%);
     }
 
     .banner_galery{
         @extend .banner_home;
-        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     }
 
     .banner_reservation{
         @extend .banner_home;
-        background: linear-gradient(324deg, rgba(204,204,204,1) 0%, rgba(203,163,122,1) 100%);
     }
 
     .banner_contact{
         @extend .banner_home;
-        background: radial-gradient(circle, rgba(255,222,117,1) 0%, rgba(190,190,196,1) 35%, rgba(138,235,255,1) 100%);
     }
 }
 
@@ -164,7 +157,7 @@
     }
 
     img{
-        background-color: rgb(255, 204, 0);
+        background-color: rgb(255, 249, 207);
         border-radius: 50px;
         border: solid 5px black;
         display: flex;
@@ -225,6 +218,11 @@
     };
 }
 
+.selec_date{
+    display: flex;
+    justify-content: start;
+}
+
 /* FOOTER */
 footer{
     color: $ligth;
@@ -241,6 +239,7 @@ footer{
     span{
         margin-bottom: 30px;
         padding-bottom: 30px;
+        font-size: 1rem;
     }
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "proyectocoderhouse",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web oficial de Grupo Pepe Wings - Restaurante de Fast Food especializado en Alitas y Coctelería",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -29,7 +29,7 @@
 
 /* Formato a la portada */
 .banner .banner_home, .banner .banner_menu, .banner .banner_promos, .banner .banner_galery, .banner .banner_reservation, .banner .banner_contact {
-  background-image: radial-gradient(#ffbf00, black); }
+  background: linear-gradient(black, #ffbf00); }
   .banner .banner_home h1, .banner .banner_menu h1, .banner .banner_promos h1, .banner .banner_galery h1, .banner .banner_reservation h1, .banner .banner_contact h1 {
     display: flex;
     justify-content: center;
@@ -42,21 +42,6 @@
     @media (max-width: 992px) {
       .banner .banner_home h1, .banner .banner_menu h1, .banner .banner_promos h1, .banner .banner_galery h1, .banner .banner_reservation h1, .banner .banner_contact h1 {
         font-size: 2em; } }
-
-.banner .banner_menu {
-  background: radial-gradient(circle, #fa5c5c 0%, #dc89de 100%); }
-
-.banner .banner_promos {
-  background: linear-gradient(324deg, #fff24b 0%, #ff8200 100%); }
-
-.banner .banner_galery {
-  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); }
-
-.banner .banner_reservation {
-  background: linear-gradient(324deg, #cccccc 0%, #cba37a 100%); }
-
-.banner .banner_contact {
-  background: radial-gradient(circle, #ffde75 0%, #bebec4 35%, #8aebff 100%); }
 
 /* Formato a la sección ¿Quiénes Somos? */
 .who {
@@ -122,7 +107,7 @@
     display: flex;
     justify-content: center; }
   .digital img {
-    background-color: #ffcc00;
+    background-color: #fff9cf;
     border-radius: 50px;
     border: solid 5px black;
     display: flex;
@@ -164,6 +149,10 @@
   margin: 20px;
   padding: 10px; }
 
+.selec_date {
+  display: flex;
+  justify-content: start; }
+
 /* FOOTER */
 footer {
   color: white;
@@ -176,7 +165,8 @@ footer {
     width: 150px; }
   footer span {
     margin-bottom: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    font-size: 1rem; }
 
 .facebook-icon {
   background-image: url("/img/facebook.png"); }
