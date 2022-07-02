@@ -43,6 +43,65 @@
       .banner .banner_home h1, .banner .banner_menu h1, .banner .banner_promos h1, .banner .banner_galery h1, .banner .banner_reservation h1, .banner .banner_contact h1 {
         font-size: 2em; } }
 
+/* Carrusel index */
+#carruselHome {
+  height: 555px;
+  overflow: hidden; }
+  #carruselHome .itemCarrusel {
+    height: 555px;
+    position: relative; }
+    #carruselHome .itemCarrusel .tarjetaCarrusel {
+      height: 100%; }
+    #carruselHome .itemCarrusel #card1 {
+      background-color: grey;
+      display: flex;
+      justify-content: center; }
+      #carruselHome .itemCarrusel #card1 img {
+        width: 1000px; }
+    @media (max-width: 480px) {
+      #carruselHome .itemCarrusel #card1 img {
+        width: 100%; } }
+    #carruselHome .itemCarrusel #card2 {
+      background-color: grey;
+      display: flex;
+      justify-content: center; }
+      #carruselHome .itemCarrusel #card2 img {
+        width: 1000px; }
+    @media (max-width: 480px) {
+      #carruselHome .itemCarrusel #card2 img {
+        width: 100%; } }
+    #carruselHome .itemCarrusel #card3 {
+      background-color: grey;
+      display: flex;
+      justify-content: center; }
+      #carruselHome .itemCarrusel #card3 img {
+        width: 1000px; }
+    @media (max-width: 480px) {
+      #carruselHome .itemCarrusel #card3 img {
+        width: 100%; } }
+    #carruselHome .itemCarrusel .flechasCarrusel {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px; }
+      #carruselHome .itemCarrusel .flechasCarrusel a {
+        text-decoration: none; }
+        #carruselHome .itemCarrusel .flechasCarrusel a i {
+          color: white; }
+
+#puntos {
+  display: flex;
+  justify-content: space-around; }
+
+#puntos > a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: grey; }
+
 /* Formato a la sección ¿Quiénes Somos? */
 .who {
   margin: 30px;

@@ -72,6 +72,105 @@
     }
 }
 
+/* Carrusel index */
+#carruselHome{
+    height: 555px;
+    overflow: hidden;
+
+    .itemCarrusel{
+        height: 555px;
+        position: relative;
+    
+        .tarjetaCarrusel{
+            height: 100%;
+        }
+
+        #card1{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            
+            img{
+                width: 1000px;
+            }
+        }
+
+        @media(max-width:$sm){
+            #card1{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        #card2{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 1000px;
+            }
+        }
+
+        @media(max-width:$sm){
+            #card2{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        #card3{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 1000px;
+            }
+        }
+
+        @media(max-width:$sm){
+            #card3{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    
+        .flechasCarrusel{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+            a{
+                text-decoration: none;
+                
+                i{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+#puntos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#puntos > a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: grey;
+}
+
 /* Formato a la sección ¿Quiénes Somos? */
 .who{
     margin: 30px;
